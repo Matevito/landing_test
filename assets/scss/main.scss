@@ -4,6 +4,34 @@
     z-index: 1000;
     nav {
       @apply tw-flex tw-justify-between tw-items-center tw-text-white;
+
+      .icons{
+         @apply tw-flex tw-gap-4 max-md:tw-gap-0;
+ 
+         .selectedLanguage {
+           border: 1px solid #ffffff;
+           border-radius: 5px;
+           background: transparent;
+           @apply tw-px-2;
+         }
+         :focus-visible {
+           outline: none !important;
+         }
+ 
+         a {
+           img {
+             @apply max-md:tw-pr-5;
+           }
+         }
+       }
+
+      .btn-contact {
+         @apply tw-px-[17px] tw-py-2  tw-text-white tw-font-poppinsSemiBold;
+         @apply max-md:tw-px-2 max-md:tw-py-1 max-md:tw-text-sm;
+         border-radius: 5px;
+         background: transparent
+           linear-gradient(142deg, #6b1dbe 0%, #7b0fbf 100%);
+       }
     }
    };
 
@@ -13,5 +41,52 @@
 
    footer {
     @apply tw-bg-tertiary-color tw-p-12 tw-text-info-light;
+
+    .principalInformation {
+      @apply tw-flex tw-justify-between max-lg:tw-flex-col max-lg:tw-space-y-10;
+
+      h5 {
+         @apply tw-text-2xl tw-pt-4 tw-font-poppinsSemiBold max-lg:tw-text-base;
+      }
+
+      .info-item {
+         @apply tw-text-xl tw-text-center max-lg:tw-text-left max-lg:tw-text-base;
+         .btn-contact {
+            @apply tw-text-purple-color tw-font-poppinsMedium tw-flex tw-gap-3 tw-items-center;
+            border-radius: 10px;
+         }
+         p {
+            @apply tw-font-poppinsSemiBold tw-mb-6 tw-relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 150px;
+              height: 2px;
+              @apply tw-bg-info-light;
+              bottom: -0.5rem;
+              left: 50%;
+              right: 50%;
+              transform: translateX(-50%);
+              @apply max-lg:tw-left-0 max-lg:tw-translate-x-0;
+            }
+         }
+      }
+
+
+      // responsive items
+      .responsive-awards-list {
+         @apply tw-hidden max-lg:tw-grid tw-grid-cols-3 tw-gap-8 tw-mt-4;
+         a {
+          @apply tw-flex tw-justify-center tw-items-center;
+         }
+      }
+    }
+
+    .secondaryInformation {
+      @apply tw-flex tw-justify-between tw-items-start tw-mt-6 max-lg:tw-flex-col max-lg:tw-mt-10;
+      .awardsList {
+         @apply tw-flex tw-gap-4 tw-items-center max-lg:tw-hidden;
+      }
+    }
    }
 }
