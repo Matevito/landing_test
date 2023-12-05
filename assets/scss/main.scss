@@ -87,6 +87,15 @@
       .awardsList {
          @apply tw-flex tw-gap-4 tw-items-center max-lg:tw-hidden;
       }
+      .terms-conditions {
+         @apply tw-text-right;
+         p {
+          @apply tw-mb-3;
+         }
+         a {
+          @apply tw-underline;
+         }
+      }
     }
    }
 }

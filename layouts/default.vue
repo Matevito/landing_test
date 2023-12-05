@@ -119,9 +119,9 @@ export default {
             :alt="award.altName"
           >
         </div>
-
-        <div class="socialMedia">
-
+        <div class="terms-conditions">
+          <p>© 2023 Kubo - Agencia digital de desarrollo de aplicaciones móviles, Colombia.</p>
+          <a class="terms">Términos y condiciones</a>
         </div>
       </div>
     </footer>
