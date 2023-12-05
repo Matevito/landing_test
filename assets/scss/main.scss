@@ -39,6 +39,24 @@
     @apply tw-pt-[90px] tw-bg-primary-color  tw-text-white;
    }
 
+   .homePage {
+      @apply tw-bg-primary-color tw-px-24 tw-space-y-44 max-lg:tw-py-8;
+      
+      
+      .project-icons {
+         @apply tw-flex tw-gap-[157px] tw-pt-16 max-lg:tw-flex-col max-lg:tw-pt-0 max-lg:tw-gap-12;
+      }
+
+      
+      h1 {
+         @apply tw-text-left tw-text-white tw-font-poppinsBold tw-text-4xl max-md:tw-text-[28px] max-md:tw-max-w-[280px];
+         line-height: 1.4;
+         b {
+            @apply tw-text-blue-color-secondary;
+         }
+      }
+      
+   }
    footer {
     @apply tw-bg-tertiary-color tw-p-12 tw-text-info-light;
 
