@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
-  modules: ["@nuxt/content", "@nuxtjs/i18n"],
+  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxtjs/tailwindcss"],
   app: {
     //pageTransition: { name: "page", mode: "out-in" },
   },
@@ -28,23 +28,18 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/css/_colors.scss" as *;',
         },
       },
     },
   },
-  css: [
-    "primevue/resources/themes/lara-light-blue/theme.css",
-    "primevue/resources/primevue.css",
-    "primeicons/primeicons.css",
-    "primeflex/primeflex.css",
-    "~/assets/css/_general.scss",
-    "~/assets/css/_login.scss",
-  ],
+  css: ["~/assets/scss/main.scss"],
+
   build: {
     transpile: ["primevue"],
   },
   i18n: {
     vueI18n: "./translator/i18n.config.ts",
   },
+
+  cssSourceMap: true,
 });

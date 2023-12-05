@@ -1,0 +1,17 @@
+.layout {
+   header {
+    @apply tw-bg-primary-color tw-px-12 tw-py-6 max-lg:tw-px-6 tw-fixed;
+    z-index: 1000;
+    nav {
+      @apply tw-flex tw-justify-between tw-items-center tw-text-white;
+    }
+   };
+
+   main {
+    @apply tw-pt-[90px] tw-bg-primary-color  tw-text-white;
+   }
+
+   footer {
+    @apply tw-bg-tertiary-color tw-p-12 tw-text-info-light;
+   }
+}

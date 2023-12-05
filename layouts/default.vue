@@ -1,16 +1,18 @@
 <template>
   <div class="layout"> 
     <header>
-      <div>
+      <nav>
         <div class="icon">
           icon
         </div>
         <div class="contact">
           contact
         </div>
-      </div>
+      </nav>
     </header>
-    <slot />
+    <main>
+      <slot />
+    </main>
     <footer>
       footer
     </footer>
